@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body>
+    <h1 id="msgh1">Hello welcome to HTML CSS Bootstrap</h1>
+    <br>
+    <h2 id="msgh2">Hai hello javascript is a interpreted lang</h2>
+    <br>
+    <p id="msgp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic placeat id, distinctio, consectetur beatae labore rerum, magni neque ipsum molestias similique. Id consequatur iusto quis autem obcaecati deserunt iste!</p>
+    <br>
+    <button class="btn btn-danger " type="button" onclick="alert('U clicked the button')">  Click here </button>
+
+    <h1 id="info1">Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap</h1>
+    <h2 id="info2">Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops
+        Mobile-first approach: In Bootstrap, mobile-first styles are part of the core framework</h2>   
+    <p id="info3">Bootstrap 5 uses HTML elements and CSS properties that require the HTML5 doctype.
+    Always include the HTML5 doctype at the beginning of the page, along with the lang attribute and the correct title and character set</p>
+
+    <button class="btn btn-success  " type="button" onclick="fun1()">  Click here </button>       
+
+    <button class="btn btn-success  " type="button" onclick="fun2()">  fun2 here </button>   
+
+
+    <script>
+
+        
+
+        function fun1()
+        {            
+            alert("hello")
+            document.getElementById("info1").innerText="Hard to use and its not have any basic knowledge also"
+            document.getElementById("info1").innerHTML=" <h1>Hard to use and </h1>"
+            document.getElementById("info1").style.color="white"
+            document.getElementById("info1").style.backgroundColor="red"
+            document.getElementById("info1").style.padding="50px"
+            document.getElementById("info1").style.margin="100px"
+            document.getElementById("info1").style.textAlign="right"
+            document.getElementById("info1").style.border="5px solid blue"
+            
+         }
+         function fun2()
+        {            
+            alert("hello fun2 ")
+            document.getElementById("info2").innerText="Hard to use and its not have any basic knowledge also"
+            document.getElementById("info2").innerHTML=" <h1>Hard to use and </h1>"
+            document.getElementById("info2").style.color="white"
+            document.getElementById("info2").style.backgroundColor="red"
+            document.getElementById("info2").style.padding="50px"
+            document.getElementById("info2").style.margin="100px"
+            document.getElementById("info2").style.textAlign="center"
+            document.getElementById("info2").style.border="5px solid blue"
+            
+         }
+
+        document.getElementById("msgh1").innerText="This is Hash World " 
+        document.getElementById("msgh2").innerText="Learning Never ends " 
+        document.getElementById("msgp").innerText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic placeat id, distinctio, consectetur beatae labore rerum, magni neque ipsum molestias similique. Id consequatur iusto quis autem obcaecati deserunt iste!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic placeat id, distinctio, consectetur beatae labore rerum, magni neque ipsum molestias similique. Id consequatur iusto quis autem obcaecati deserunt iste!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic placeat id, distinctio, consectetur beatae labore rerum, magni neque ipsum molestias similique. Id consequatur iusto quis autem obcaecati deserunt iste!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic placeat id, distinctio, consectetur beatae labore rerum, magni neque ipsum molestias similique. Id consequatur iusto quis autem obcaecati deserunt iste! " 
+
+        document.getElementById("msgh1").innerHTML="<b>This is Hash World</b> " 
+        document.getElementById("msgh2").innerText="Learning Never ends " 
+        document.getElementById("msgh1").innerHTML="<b>This is Hash World</b><h2>oyyyyyyyyyyyyy</h2> " 
+        document.getElementById("msgh2").innerText="Learning Never ends " 
+
+        document.getElementById("msgh1").style.color="red"
+        document.getElementById("msgh1").style.backgroundColor="black"
+        document.getElementById("msgh1").style.padding="50px"
+        document.getElementById("msgh1").style.margin="100px"
+        document.getElementById("msgh1").style.textAlign="right"
+        document.getElementById("msgh1").style.border="5px solid"
+      
+        document.getElementById("msgh2").style.color="black"
+        document.getElementById("msgh2").style.backgroundColor="yellow"
+        document.getElementById("msgh2").style.padding="50px"
+        document.getElementById("msgh2").style.margin="20px"
+        document.getElementById("msgh2").style.textAlign="center"
+        document.getElementById("msgh2").style.border="5px blue solid"
+
+        document.getElementById("msgp").innerText= "Bootstrap is a free front-end framework for fasBootstrap is a free front-end Responsive web design is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops."
+        
+
+    </script>
+   
+</body>
+</html>

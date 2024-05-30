@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body>
+    <h1 id="msgh1">Hello welcome to HTML CSS Bootstrap</h1>
+    <br>
+    <h2 id="msgh2">Hai hello javascript is a interpreted lang</h2>
+    <br>
+    <p id="msgp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic placeat id, distinctio, consectetur beatae labore rerum, magni neque ipsum molestias similique. Id consequatur iusto quis autem obcaecati deserunt iste!</p>
+    <br>
+    <button class="btn btn-danger " type="button" onclick="alert('U clicked the button')">  Click here </button>
+
+    <h1 id="info1">Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap</h1>
+    <h2 id="info2">Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops
+        Mobile-first approach: In Bootstrap, mobile-first styles are part of the core framework</h2>   
+    <p id="info3">Bootstrap 5 uses HTML elements and CSS properties that require the HTML5 doctype.
+    Always include the HTML5 doctype at the beginning of the page, along with the lang attribute and the correct title and character set</p>
+
+    <button class="btn btn-success  " type="button" onclick="fun1()">  Click here </button>       
+
+    <button class="btn btn-success  " type="button" onclick="fun2()">  fun2 here </button>   
+
+
+    <script>
+
+        let info1=document.getElementById("info1")
+        let info2=document.getElementById("info2")
+        let msg1=document.getElementById("msgh1")
+        let msg2=document.getElementById("msgh2")
+
+        
+
+        function fun1()
+        {            
+            alert("hello")
+            .innerText="Hard to use and its not have any basic knowledge also"
+            info1.innerHTML=" <h1>Hard to use and </h1>"
+            info1.style.color="white"
+            info1.style.backgroundColor="red"
+            info1.style.padding="50px"
+            info1.style.margin="100px"
+            info1.style.textAlign="right"
+            info1.style.border="5px solid blue"
+            
+         }
+         function fun2()
+        {            
+            alert("hello fun2 ")
+            info2.innerText="Hard to use and its not have any basic knowledge also"
+            info2.innerHTML=" <h1>Hard to use and </h1>"
+            info2.style.color="white"
+            info2.style.backgroundColor="red"
+            info2.style.padding="50px"
+            info2.style.margin="100px"
+            info2.style.textAlign="center"
+            info2.style.border="5px solid blue"
+            
+         }
+
+         msg1.innerText="This is Hash World " 
+         msg2.innerText="Learning Never ends " 
+        document.getElementById("msgp").innerText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic placeat id, distinctio, consectetur beatae labore rerum, magni neque ipsum molestias similique. Id consequatur iusto quis autem obcaecati deserunt iste!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic placeat id, distinctio, consectetur beatae labore rerum, magni neque ipsum molestias similique. Id consequatur iusto quis autem obcaecati deserunt iste!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic placeat id, distinctio, consectetur beatae labore rerum, magni neque ipsum molestias similique. Id consequatur iusto quis autem obcaecati deserunt iste!Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic placeat id, distinctio, consectetur beatae labore rerum, magni neque ipsum molestias similique. Id consequatur iusto quis autem obcaecati deserunt iste! " 
+
+        msg1.innerHTML="<b>This is Hash World</b> " 
+        msg2.innerText="Learning Never ends " 
+        msg1.innerHTML="<b>This is Hash World</b><h2>oyyyyyyyyyyyyy</h2> " 
+        msg2.innerText="Learning Never ends " 
+
+        msg1.style.color="red"
+        msg1.style.backgroundColor="black"
+        msg1.style.padding="50px"
+        msg1.style.margin="100px"
+        msg1.style.textAlign="right"
+        msg1.style.border="5px solid"
+      
+        msg2.style.color="black"
+        msg2.style.backgroundColor="yellow"
+        msg2.style.padding="50px"
+        msg2.style.margin="20px"
+        msg2.style.textAlign="center"
+        msg2.style.border="5px blue solid"
+
+        document.getElementById("msgp").innerText= "Bootstrap is a free front-end framework for fasBootstrap is a free front-end Responsive web design is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops."
+        
+
+    </script>
+   
+</body>
+</html>

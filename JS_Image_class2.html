@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <h1 id="infoh1"  class="my-5 ">Bootstrap 5 is designed to be responsive to mobile devices. Mobile-first styles are part of the core framework.</h1>
+
+    <p id="infop" class="mb-5 ">Bootstrap 5 supports the latest, stable releases of all major browsers and platforms. However, Internet Explorer 11 and down is not supported.</p>
+    
+    <button type="button" class="btn btn-danger mx-3" onclick="red()">Red</button>
+    <button type="button" class="btn btn-primary mx-3 " onclick="blue()">Blue</button>
+    <button type="button" class="btn btn-warning mx-3 "  onclick="yellow()">Yellow</button>
+    <button type="button" class="btn btn-dark mx-3 "  onclick="black()">Black</button>
+
+    <div class="container mb-5 ">
+        <img src="https://w0.peakpx.com/wallpaper/535/564/HD-wallpaper-krithi-shetty-phone-krithi-shetty-thumbnail.jpg" alt="" id="img1" width="400px" height="350px"/>
+    </div>
+    <div class="container mb-5 ">
+        <img src="https://w0.peakpx.com/wallpaper/242/93/HD-wallpaper-beauty-23-actress-gorgeous-krithi-shetty.jpg" alt="" id="img2"
+        style="width:150px;height:150px"/>
+    </div>
+    <button type="button" class="btn btn-danger mx-3" onclick="f1()">100*100</button>
+    <button type="button" class="btn btn-primary mx-3 " onclick="f2()">200*200</button>
+    <button type="button" class="btn btn-warning mx-3 "  onclick="f3()">300*300</button>
+    <button type="button" class="btn btn-dark mx-3 "  onclick="f4()">500*500</button>
+    <BR>
+        <BR>
+    <img src="https://e0.pxfuel.com/wallpapers/1018/502/desktop-wallpaper-kriti-shetty-head-nose-kriti-shetty-thumbnail.jpg" id="img3" height="300px"  width="250px" class=" d-block  mx-auto "/><br>
+ 
+    <div class="container-fluid full-height d-flex justify-content-center align-items-center">
+        <div>
+            <button type="button" class="btn btn-primary m-2" onclick="pic1()"> <img src="https://mrwallpaper.com/images/hd/krithi-shetty-heroine-hupak0ydedhwgk6j.jpg" alt=" " id="img3" height="70px"  width="70px" class=" d-block  mx-auto "/></button>
+            <button type="button" class="btn btn-primary m-2" onclick="pic2()"><img src="https://i.pinimg.com/474x/1b/4b/f0/1b4bf09196283d908d79f93756525ccf.jpg" alt=" " id="img3" height="70px"  width="70px" class=" d-block  mx-auto "/> </button>
+            <button type="button" class="btn btn-primary m-2" onclick="pic3()"> <img src="https://www.bhmpics.com/downloads/krithi-shetty-hd-Wallpapers/8.screen-0.jpg.webp" alt=" " id="img3" height="70px"  width="70px" class=" d-block  mx-auto "/></button>
+        </div>
+    </div>
+
+    <div>
+        <label for="inputPassword5" class="form-label">Password</label>
+        <input type="password" placeholder="Enter Password"  class="form-control" id="pswd" aria-describedby="passwordHelpBlock">
+    </div>
+
+    <button type="button" class="btn btn-warning mx-3 "  onclick="show()">Show</button>
+    <button type="button" class="btn btn-dark mx-3 "  onclick="hide()">Hide</button>
+<BR>
+   
+
+
+    <script>
+     function show()
+     {
+      
+        document.getElementById("pswd").setAttribute("type","text")
+     }
+     function hide()
+     {
+        document.getElementById("pswd").setAttribute("type","password")
+     }
+
+        function pic1()
+        {
+            document.getElementById("img3").src="https://mrwallpaper.com/images/hd/krithi-shetty-heroine-hupak0ydedhwgk6j.jpg"
+        }
+        function pic2()
+        {
+            document.getElementById("img3").src="https://i.pinimg.com/474x/1b/4b/f0/1b4bf09196283d908d79f93756525ccf.jpg"
+        }
+        function pic3()
+        {
+            document.getElementById("img3").src="https://www.bhmpics.com/downloads/krithi-shetty-hd-Wallpapers/8.screen-0.jpg.webp"
+        }
+
+       function f1()
+        {
+            document.getElementById("img1").setAttribute("height","100")
+            document.getElementById("img1").setAttribute("width","100")
+            document.getElementById("img2").setAttribute("style","width:100px;height:100px")
+        }
+        function f2()
+        {
+            document.getElementById("img1").setAttribute("height","200")
+            document.getElementById("img1").setAttribute("width","200")
+            document.getElementById("img2").setAttribute("style","width:250px;height:250px")
+        }
+        function f3()
+        {
+            document.getElementById("img1").setAttribute("height","300")
+            document.getElementById("img1").setAttribute("width","300")
+        }
+        function f4()
+        {
+            document.getElementById("img1").setAttribute("height","500")
+            document.getElementById("img1").setAttribute("width","500")
+        }
+
+
+
+        function red()
+        {
+            document.getElementById("infoh1").innerHTML="<i>Welcome to Ilander Technologies</i>"
+            document.getElementById("infoh1").style.backgroundColor="red"
+            document.getElementById("infoh1").style.padding="30px"
+            document.getElementById("infoh1").style.textAlign="center"
+            document.getElementById("infoh1").style.border="5px solid blue"
+            document.getElementById("infoh1").style.color="white"
+            document.getElementById("infop").style.backgroundColor="red"
+            document.getElementById("infop").style.padding="30px"
+            document.getElementById("infop").style.textAlign="center"
+            document.getElementById("infop").style.border="5px solid blue"
+            document.getElementById("infop").style.color="white"
+
+
+
+        }
+
+        function blue()
+        {
+            document.getElementById("infoh1").innerHTML="<i>Welcome to Ilander Technologies</i>"
+            document.getElementById("infoh1").style.backgroundColor="blue"
+            document.getElementById("infoh1").style.padding="30px"
+            document.getElementById("infoh1").style.textAlign="center"
+            document.getElementById("infoh1").style.border="5px solid red"
+            document.getElementById("infoh1").style.color="white"
+            document.getElementById("infop").style.backgroundColor="blue"
+            document.getElementById("infop").style.padding="30px"
+            document.getElementById("infop").style.textAlign="center"
+            document.getElementById("infop").style.border="5px solid red"
+            document.getElementById("infop").style.color="white"
+
+
+        }
+        function yellow()
+        {
+            document.getElementById("infoh1").innerHTML="<i>Welcome to Ilander Technologies</i>"
+            document.getElementById("infoh1").style.backgroundColor="yellow"
+            document.getElementById("infoh1").style.padding="30px"
+            document.getElementById("infoh1").style.textAlign="center"
+            document.getElementById("infoh1").style.border="5px solid black"
+            document.getElementById("infoh1").style.color="red"
+            document.getElementById("infop").style.backgroundColor="yellow"
+            document.getElementById("infop").style.padding="30px"
+            document.getElementById("infop").style.textAlign="center"
+            document.getElementById("infop").style.border="5px solid black"
+            document.getElementById("infop").style.color="red"
+
+
+        }
+        function black()
+        {
+            document.getElementById("infoh1").innerHTML="<i>Welcome to Ilander Technologies</i>"
+            document.getElementById("infoh1").style.backgroundColor="black"
+            document.getElementById("infoh1").style.padding="30px"
+            document.getElementById("infoh1").style.textAlign="center"
+            document.getElementById("infoh1").style.border="5px solid blue"
+            document.getElementById("infop").style.backgroundColor="black"
+            document.getElementById("infop").style.padding="30px"
+            document.getElementById("infop").style.textAlign="center"
+            document.getElementById("infop").style.border="5px solid black"
+            document.getElementById("infop").style.color="white"
+            document.getElementById("infoh1").style.color="white"
+
+        }
+
+    </script>
+
+</body>
+</html>
